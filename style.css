@@ -1,0 +1,644 @@
+/* google font  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;800;900&display=swap');
+
+/*  */
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins",sans-serif;
+    box-sizing: border-box;
+     
+}
+#fromSection {
+    width: 1300px;
+    margin: auto;
+    height: 100vh;
+    overflow: hidden;
+
+}
+.LogInForm{
+    
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    position: relative;
+
+
+
+
+}
+
+
+.block{
+    display: block;
+     
+   
+  }
+  
+  /*Hidden login*/
+  .none{
+    display: none;
+    
+   
+  }
+
+
+
+
+
+form {
+    position: relative;
+
+}
+.myfromValid {
+    height: 310px;
+}
+
+
+.tittle {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.tittle span {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid  rgb(63 0 245);
+    color: rgb(63 0 245);
+
+}
+.tittle span .fa-user{
+    font-size: 20px;
+    margin-top: 7px;
+
+}
+.tittle h4{
+    font-weight: 500;
+    color:rgb(94 45 229);
+    
+}
+.log-imgForm{
+    width: 585px;
+
+}
+
+.log-imgForm img{
+    width: 100%;
+}
+.validFrom{
+    /* box-shadow: 0px 5px 24px rgb(225 215 253 / 52%); */
+    box-shadow: 0px 0px 9px rgb(225 215 253 / 52%);
+    border-radius: 5px;
+    padding: 25px;
+    width: 400px;
+    position: absolute;
+    background:#fff;
+    height: 560px;
+    z-index: 2;
+    top: 5%;
+    right: 25%;
+    animation-duration: .4s;
+    animation-name: animate-login;
+     
+}
+
+
+.EmailBox , .passWordBox {
+      height: 100px;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+
+}
+
+.mainFrom{
+    padding: 5px 10px;
+
+}
+
+
+.EmailBox input, .passWordBox input {
+    padding: 13px 33px;
+    font-size: 14px;
+    border-radius: 5px;
+    outline: none;
+    /* border : 2px solid rgb(225 215 253); */
+       border : 2px solid #cdbbff;
+    position: relative;
+    font-weight: 500;
+ 
+
+} 
+.EmailBox label , .passWordBox label{
+ font-weight: 500;
+ font: 15px;
+
+}
+.passWordBox  .user-icon , .EmailBox .email-icon {
+    position: absolute;
+    left: 10px;
+    top: 43px;   
+
+}
+.Trams-condition{ 
+    position: relative;
+    margin-top: -7px;
+  display: flex;
+  align-items: center;
+}
+
+.Trams-condition span {
+    padding: 0px 6px;
+    margin-top: 1px;
+    
+}
+
+.Trams-condition .forgate{
+    font-size: 13px;
+       position: absolute;
+       right: 0;
+       color: #3f00f5;
+       text-transform: capitalize;
+       text-decoration: none;
+}
+
+
+/* icon block */
+.ex-icon , .check-icon{
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+   display: none !important;
+
+}
+
+/*  */
+ .passWordBox .ex-icon1 , .check-icon1 {
+   position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: none !important;
+}
+
+
+.passWordBox input:focus ~ .user-icon , .EmailBox input:focus ~ .email-icon {
+ color: rgb(177, 148, 255);
+ transition: all 0.3s ease;
+
+}
+
+
+.fromBtn{
+    font-weight: 500;
+    background-color: rgb(225 215 253 / 52%);
+    padding: 10px 20px;
+    border-radius: 5px;
+    position: absolute;
+    right: 4px;
+    outline: none;
+    border : 2px solid  rgb(225 215 253 / 52%);
+    width: 305px;
+    margin-top: 15px;
+    cursor: pointer;
+
+
+}
+#text {
+    font-size: 13px;
+
+}
+/* Error form email */
+.Error #text{
+    color: red;
+}
+
+.Valid #text{
+    color: rgb(100, 156, 16);
+
+}
+
+/* icon */
+.Error .EmailBox input ~ .ex-icon{
+    color: red;
+    display: block !important;
+
+}
+.Error .EmailBox input ~ .email-icon {
+    color: red;
+}
+.Error .EmailBox  input{
+    border-color: red;
+}
+
+/* icon end */
+
+/* valid Email  */
+
+.Valid .EmailBox  input {
+    border-color: rgb(100, 156, 16);
+}
+.Valid .EmailBox input ~ .email-icon {
+    color: rgb(100, 156, 16);
+
+}
+.Valid .EmailBox input ~ .check-icon {
+    display: block !important;
+  color: rgb(100, 156, 16);
+}
+
+
+/* end valid email */
+/* error end email */
+
+/* password Error */
+#text1{
+   font-size: 13px;
+}
+
+.PassError #text1 {
+    color: red;
+}
+
+
+.PassError  .passWordBox input ~ .user-icon{
+    color: red;
+}
+
+.PassError  .passWordBox input ~ .ex-icon1{
+    display: block !important;
+    color: red;
+}
+
+.PassError  .passWordBox input {
+    border-color: red;
+}
+
+
+.Valid-1 .passWordBox input{
+    border-color: rgb(100, 156, 16);
+    
+}
+.Valid-1 .passWordBox input ~ .check-icon1{
+    display: block !important;
+    color: rgb(100, 156, 16);
+}
+
+.Valid-1 .passWordBox input ~ .user-icon{
+    color: rgb(100, 156, 16);
+}
+
+.Valid-1 #text1{
+    color: rgb(100, 156, 16);
+}
+
+.socil-network {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     gap: 7px;
+     margin-top: 1rem;
+
+
+
+}
+.fbicon{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+   
+    
+}
+.fbicon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.googleicon {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+
+
+}
+.googleicon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.option  h4{
+text-align: center;
+font-weight: 500;
+font-size: 13px;
+letter-spacing: 1px;
+color: rgb(63 0 245);
+
+}
+
+
+/* Sign UP Form and Creating form */
+
+.CreatNewAccount {
+    
+    padding: 27px;
+    display: flex;
+align-items: center;
+justify-content: center;
+ gap: 8px;
+ font-size: 15px;
+
+}
+.CreatNewAccount a {
+   color: rgb(63 0 245);
+   text-decoration: none;
+
+}
+
+
+/* sign up */
+.CreatingForm {
+    width: 400px;
+    height: 685px;
+    border-radius: 5px;
+    padding: 25px;
+   box-shadow: 0px 0px 9px rgb(225 215 253 / 52%);
+   background-color: #fff;
+   z-index: 100;
+   top: 5%;
+   right: 25%;
+   transition: 1s;
+   position: absolute;
+   animation-duration: .4s;
+   animation-name: animate-login; 
+   
+}
+
+
+@keyframes animate-login{
+    0%{
+      transform: scale(1,1);
+    }
+    50%{
+      transform: scale(1.1,1.1);
+    }
+    100%{
+      transform: scale(1,1);
+    }
+  }
+
+
+
+.CreatFrom {
+    height: 570px;
+    padding: 5px 10px;
+
+
+}
+.MainSignForm {
+    padding: 5px 10px;
+}
+.nameFrombox ,.emailBoxCreat ,.creatAcPassword,.MatchPassword {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    position: relative;
+
+}
+.nameFrombox label ,.emailBoxCreat label, .creatAcPassword label ,.MatchPassword label{
+    font-weight: 500;
+}
+  .nameFrombox input ,.emailBoxCreat input , .creatAcPassword input , .MatchPassword input{
+    padding: 13px 33px ;
+    font-size: 14px;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid #cdbbff;
+    position: relative;
+    font-weight: 500;
+
+}
+.nameIconU , .EiconE , .passIcon ,.Cpass{
+    position: absolute;
+    left: 10px;
+    top: 43px;
+}
+
+.nameIconE , .nameIconC , .EiconErr , .EiconC ,.passiconErr ,.passIconCh , .CpassC , .CpassE{
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: none !important;
+   
+}
+
+.myeye {
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: none !important;
+     /* sdfs */
+}
+
+
+.Condition{
+    position: relative;
+    height: 44px;
+}
+
+.Condition span{
+    font-size: 13px;
+    position: absolute;
+    top: 0px;
+    left: 24px;
+}
+
+
+#CondiText{
+    position: absolute;
+    top: 40px;
+    font-size: 13px;
+    left: 3px;
+}
+
+
+.Signinbtn #SignUpButton{
+    font-weight: 500;
+    background-color: rgb(225 215 253 / 52%);
+    padding: 10px 20px;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid rgb(225 215 253 / 52%);
+    width: 310px;
+    margin-top: 15px;
+    cursor: pointer;
+
+}
+
+.AllRadyAccount {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 15px;
+    padding: 14px;
+
+
+}
+
+
+.AllRadyAccount a {
+    text-decoration: none;
+    color:  rgb(63 0 245);
+
+}
+
+
+
+
+/*  */
+#CTextF , #EtextS, #Spssword ,#Context{
+font-size: 13px;
+
+}
+
+.SError #CTextF  {
+  color: red;
+}
+
+.SError .nameFrombox input {
+ border-color: red;
+}
+.SError .nameIconU {
+    color: red;
+}
+.SError .nameIconE{
+    color: red;
+    display: block !important;
+}
+
+.SValid #CTextF  { color: rgb(100, 156, 16); }
+.SValid .nameFrombox input {
+border-color: rgb(100, 156, 16);    
+}
+
+.SValid .nameIconC {
+    display: block !important;
+    color: #649c10;
+}
+.SValid .nameIconU {
+    color: rgb(100, 156, 16);
+}
+
+/* emailbox */
+.Error3 #EtextS{
+    color: red;
+}
+
+.Error3 .emailBoxCreat input {
+    border-color: red;
+}
+.Error3 .EiconE {
+ color: red;
+}
+
+.Error3 .EiconErr{
+    display: block !important;
+    color: red;
+}
+
+
+
+.valid3 #EtextS{
+    color: rgb(100, 156, 16);
+}
+.valid3 .EiconE {
+    color: rgb(100, 156, 16);
+}
+.valid3 .EiconC {
+    display: block !important;
+    color: rgb(100, 156, 16);
+}
+.valid3 .emailBoxCreat input {
+    border-color: rgb(100, 156, 16);
+}
+
+
+/* psssword error */
+
+.SErro4 #Spssword{
+    color: red;
+}
+
+.SErro4 .creatAcPassword input {
+    border-color: red;
+}
+
+.SErro4 .passiconErr{
+    color: red;
+    display: block !important;
+} 
+.SErro4 .passIcon {
+color: red;
+}
+
+
+.Svalid4  #Spssword {
+    color: rgb(100, 156, 16);
+}
+.Svalid4 .creatAcPassword input {
+    border-color: rgb(100, 156, 16);
+}
+
+.Svalid4 .passIconCh{
+    color: rgb(100, 156, 16);
+    display: block !important;
+
+}
+.Svalid4  .passIcon {
+    color: rgb(100, 156, 16);
+    }
+
+    
+/* and valid  */
+
+.CError #Context{
+color: red;
+}
+
+.CError .Cpass {
+    color: red;
+}
+.CError  .MatchPassword input {
+    border-color: red;
+}
+.CError .CpassE{
+    color: red;
+    display: block !important;
+}
+
+
+.Cvalid #Context{
+    color: rgb(100, 156, 16);
+
+}
+.Cvalid .Cpass {
+    color: rgb(100, 156, 16);
+}
+.Cvalid .CpassC {
+    display: block !important;
+    color: rgb(100, 156, 16);
+}
+.Cvalid .MatchPassword input {
+    border-color: rgb(100, 156, 16);
+}

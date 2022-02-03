@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogIn Form</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- font Awasome Cdn link -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+     <!-- font Awasome Cdn link end -->
+
+
+</head>
+<body>
+ <section id="fromSection" class="from">
+ <div class="LogInForm">
+          <div class="log-imgForm">
+                    <img src="image/logimg.png"  alt="login Picture">    
+          </div>
+       
+          <div class="validFrom ">
+              <div class="tittle">
+                <span class="iconUser"><i class="fas fa-user"></i></span>
+                <h4>Log in / Sign Up</h4>
+              </div>
+             <form class="myfromValid" action="">
+                <div class="mainFrom">
+                     <div class="EmailBox">
+                          <label for="email">Email</label>
+                           <input name="email" type="text" placeholder="Enter your email">
+                           <i class="fas fa-envelope email-icon"></i>
+                           <i class="fas fa-exclamation-circle ex-icon "></i>
+                           <i class="fas fa-check-circle  check-icon" ></i>
+                           <p id="text"></p>
+                     </div>
+                        <div class="passWordBox">
+                           <label for="">Password</label>
+                            <input type="password" placeholder="Enter your password">
+                             <i class="fas fa-user-lock user-icon"></i>
+                              <i class="fas fa-exclamation-circle  ex-icon1"></i>
+                              <i class="fas fa-check-circle  check-icon1 "></i>
+                            <p id="text1"></p>
+                       </div>
+                     <div class="Trams-condition">
+                       <input type="checkbox" name="" id="checkbox" value=""> 
+                       <span style="font-size: 13px;"><a style="text-decoration: none; color: blue;" href="http://">Remember me</a></span>
+                       <a class="forgate" href="">Forgate Password?</a>
+                    </div>
+                </div>
+                <input class="fromBtn" type="submit" value="Log In">
+             </form>
+                <div class="Other-optaion">
+                    <div class="option">
+                         <h4>Or contact with</h4>
+                            <div class="socil-network">
+                                <a class="fbicon" href=""><img src="./image/834722_facebook_icon.png" alt=""></a>
+                                <a class="googleicon" href=""><img  src="./image/google-logo-9824.png" alt=""></a>
+                            </div>
+                       </div>
+                      <div class="CreatNewAccount">
+                           <span>Don't have an account</span>
+                           <a href="" id="SignUp">Sign up</a>
+                      </div> 
+                </div>
+         </div> 
+         <!-- Sign form -->
+         <div  class="CreatingForm account">
+            <div class="tittle">
+               <span class="iconUser"><i class="fas fa-user"></i></span>
+               <h4>Sign Up</h4>
+            </div>
+            <div class="CreatFrom">
+              <form class="MainSignForm" action="#">
+                  <div class="nameFrombox">
+                    <label for="Name">Name</label>
+                    <input type="text" placeholder="Enter your name">
+                    <i class="fas fa-user-circle nameIconU"></i>
+                    <i class="fas fa-exclamation-circle nameIconE "></i>
+                    <i class="fas fa-check-circle nameIconC"></i>
+                    <p id="CTextF"></p>
+                 </div>
+                 <div class="emailBoxCreat">
+                   <label for="email">Email</label>
+                   <input type="text" placeholder="Enter your email"> 
+                   <i class="fas fa-envelope EiconE "></i>
+                   <i class="fas fa-exclamation-circle EiconErr"></i>
+                   <i class="fas fa-check-circle EiconC " ></i>
+                   <p id="EtextS"></p>
+                 </div>
+                 <div class="creatAcPassword">
+                   <label for="password">Password</label> 
+                   <input type="password" placeholder="Enter your password"> 
+                   <i class="fas fa-user-lock passIcon"></i>
+                   <i class="fas fa-exclamation-circle passiconErr"></i>
+                   <i class="fas fa-check-circle passIconCh"></i>
+                   <i class="fas fa-eye myeye"></i>
+                   <p id="Spssword"></p>
+                 </div>
+                 <div class="MatchPassword">
+                   <label for="Confirm-password">Confirm Password</label>
+                   <input type="password" placeholder="Confirm Password">
+                   <i class="fas fa-user-lock Cpass"></i>
+                   <i class="fas fa-exclamation-circle CpassE"></i>
+                   <i class="fas fa-check-circle CpassC"></i>
+                   <p id="Context"></p>
+                 </div>
+                   <div class="Condition">
+                     <input type="checkbox" name="" id="SignCecked">
+                     <span>I agree with Privacy Policy and Terms & Conditions</span>
+                     <p id="CondiText">Please check this box if you want to proceed</p>
+                   </div>
+                  <div class="Signinbtn">
+                     <button id="SignUpButton" type="submit">Sign In</button>
+                  </div>
+                   <div class="AllRadyAccount">
+                       <span> You have an All Rady Account</span>
+                       <a id="login" href="#">Log In</a>
+                   </div>
+              </form>
+
+            </div>
+           
+
+         </div> 
+
+ </div>
+
+ </section> 
+
+
+
+
+ 
+
+<script src="java.js"></script>
+</body>
+</html>
